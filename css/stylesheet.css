@@ -177,7 +177,7 @@ caption, th, td { font-weight: normal; }
 body {
 	color:#0f1f30;
 	font-family: 'Raleway', sans-serif;
-	font-size:15px;
+	font-size:18px;
 	line-height:28px;
 	margin:0;
 	padding:0; }
@@ -187,7 +187,7 @@ body {
 	background:url(../images/bg-header.png) repeat #102433;
 	background-attachment: fixed;
 	height:100%;
-	min-height:800px;
+	min-height:100px;
 	position:relative;
 	width:100%;
 	/*z-index:-100;*/ }
@@ -209,7 +209,7 @@ body {
 		display:block;
 		margin:auto;
 		position:fixed;
-		top:150px; right:0; left:0;
+		top:10px; right:0; left:0;
 		z-index:100!important; }
 		@keyframes drop {
 			0% { opacity: 0; transform: scale(2); }
@@ -227,21 +227,6 @@ body {
 			0% { opacity: 0; -moz-transform: scale(2); }
 			100% { opacity: 1; -moz-transform: scale(1); }
 			} 
-			
-	.scroll-tab {
-		background:#30c2a5;
-		color:#fff;
-		display:inline-block;
-		font-size:18px;
-		font-weight:700;
-		margin:auto;
-		padding:10px 0 8px 0;
-		position:absolute;
-		bottom:0; right:0; left:0; 
-		/*position:fixed;
-		bottom:0; right:0; left:0;*/
-		text-align:center;
-		width:80px; }
 		
 .tagline { 
 	background:#fff;
@@ -268,35 +253,19 @@ body {
 		position:relative;
 		z-index:300!important; }
 
-	
-.icons-container { 
-	background:url(../images/bg-parallax.png) repeat #e8e7e7;
-	background-attachment:fixed; 
-	border-top: 5px solid #30c2a5;
-	min-height:300px; 
-	overflow: hidden;
-	position:relative;
-	z-index:100;
-	 }
-	.icons { 
-		height:300px; 
-		margin:auto; 
-		max-width:1000px;
-		position:relative;
-		}
-	#icon-jquery { position: absolute; top:130px; left:0; }
-	#icon-css3 { position: absolute; top:90px; left:155px; }
-	#icon-html5 { position: absolute; top:95px; left:290px; }
-	#icon-indesign { position: absolute; top:115px; left:480px; }
-	#icon-illustrator { position: absolute; top:55px; left:660px; }
-	#icon-photoshop { position: absolute; top:75px; left:860px; }
-	#icon-basecamp { position: absolute; top:150px; left:0; }
-	#icon-wordpress { position: absolute; top:40px; left:155px; }
-	#icon-mailchimp { position: absolute; top:120px; left:290px; }
-	#icon-hubspot { position: absolute; top:100px;right:265px; }
-	#icon-accrisoft { position: absolute; top:40px; right:160px; }
-	#icon-litmus { position: absolute; top:140px; right:0; }
-	.parallax-item{ position:absolute; z-index:5; }
+	nav {
+        color:#fff;
+        font-size:18px;
+        font-weight:bold;
+        position:absolute;
+        top:32px;
+        text-align:right;
+        text-transform:uppercase;
+        width:100%;
+    }
+    nav a {
+        color:#fff;
+    }
 	
 #content1 {
 	background:#fff;
