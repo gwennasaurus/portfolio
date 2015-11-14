@@ -193,14 +193,11 @@ body {
 	/*z-index:-100;*/ }
 	
 	.logo {
-		animation:drop 0.5s;
-		-webkit-animation:drop 0.5s;
-		-moz-animation:drop 0.5s;
-		-ms-animation:drop 0.5s;
 		display:block;
-		margin:auto;
-		position:fixed;
-		top:350px; right:0; left:0; }
+        height:50px; 
+        position:fixed;
+        top:25px;
+    }
 	.logo-icon {
 		animation:drop 0.5s;
 		-webkit-animation:drop 0.5s;
@@ -253,7 +250,7 @@ body {
 		position:relative;
 		z-index:300!important; }
     .intro-paragraph {
-        margin:20px auto;
+        margin:20px auto 0 auto;
         max-width:620px;
         /*text-align:left;*/
     }
@@ -261,7 +258,7 @@ body {
         color:#fff;
         font-size:18px;
         font-weight:bold;
-        position:absolute;
+        position:fixed;
         top:32px;
         text-align:right;
         text-transform:uppercase;
@@ -270,10 +267,20 @@ body {
     nav a {
         color:#fff;
     }
-	
+
+.icons-container { 
+	background:url(../images/bg-parallax.png) repeat #e8e7e7;
+	background-attachment:fixed; 
+	border-top: 5px solid #30c2a5;
+	min-height:300px; 
+	overflow: hidden;
+	position:relative;
+	z-index:100;
+	 }
+
 #content1 {
 	background:#fff;
-	border-top: 5px solid #30c2a5;
+	border-top: 1px solid #d7d7d7;
 	padding:120px 0;
 	position:relative;
 	width:100%;
@@ -283,7 +290,7 @@ body {
 		background:url(../images/hr-triangle.png) no-repeat top center; 
 		border:0; 
 		height:4px; 
-		margin:90px 0 120px 0; }
+		margin:90px 0 100px 0; }
 
 	.philosophy, .skills, .experience { margin:60px 0 0 0; position:relative; width:100%; }
 		.philosophy h3 { margin:30px 0; }		
@@ -292,7 +299,7 @@ body {
 
 #content2 {
 	background:#fff;
-	border-top: 5px solid #30c2a5;
+	border-top: 1px solid #d7d7d7;
 	padding:120px 0;
 	position:relative;
 	width:100%;
@@ -378,6 +385,7 @@ body {
 		vertical-align:middle; }
 
 #content3 {
+    border-top: 1px solid #d7d7d7;
 	font-size:18px;
 	line-height:36px;
 	padding:120px 0;
@@ -385,7 +393,7 @@ body {
 
 #content4 {
 	background:#fff;
-	border-top: 5px solid #30c2a5;
+	border-top: 1px solid #d7d7d7;
 	padding:120px 0;
 	position:relative;
 	width:100%;
