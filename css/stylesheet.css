@@ -292,10 +292,12 @@ body {
 		height:4px; 
 		margin:90px 0 100px 0; }
 
-	.philosophy, .skills, .experience { margin:60px 0 0 0; position:relative; width:100%; }
+	.philosophy, .process, .skills, .experience { margin:60px 0 0 0; position:relative; width:100%; }
 		.philosophy h3 { margin:30px 0; }		
-		.skills h3 { display:inline; }
-		
+		.process p { margin:0 0 15px 0; }
+        .process .define { margin-top:24px; }
+        .skills h3 { display:inline; }
+        
 
 #content2 {
 	background:#fff;
