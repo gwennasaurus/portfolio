@@ -55,7 +55,8 @@ a {
 	color:#248479; 
 	font-weight:bold; 
 	line-height:inherit; 
-	text-decoration:none; }
+	text-decoration:none;
+    transition: all 0.35s ease-in-out; }
 	
 a:hover { color:#30c2a5; }
 
@@ -246,7 +247,7 @@ body {
 	
 	.intro-above { 
 		background:#fff;
-		padding:0 0 120px 0;
+		padding:40px 0 120px 0;
 		position:relative;
 		z-index:300!important; }
     .intro-paragraph {
@@ -528,9 +529,9 @@ footer {
 	margin:10px 0;
 	padding:25px 25px;
 	text-align:center;
-	transition: background-color 0.45s ease-in-out, border-color 0.45s ease-in-out; 
-	-webkit-transition: -webkit-background-color 0.45s ease-in-out, border-color 0.45s ease-in-out;
-	-moz-transition: -moz-background-color 0.45s ease-in-out, border-color 0.45s ease-in-out; }
+	transition: all 0.35s ease-in-out; 
+	-webkit-transition: -webkit-all 0.35s ease-in-out
+	-moz-transition: -moz-all 0.35s ease-in-out; }
 	.button1-solid {
 		background-color:#30c2a5;
 		color:#fff;
@@ -566,7 +567,10 @@ footer {
 .hide { display: none; }
 .hideclear { clear:both; height:0; overflow:hidden; visibility:hidden;}
 .last { margin-right:0; }
+.text-18 { font-size:20px; }
 .text-21 { font-size:28px; line-height:48px; }
+.pt-5 { padding:5px 0 0 0; }
+.fullwidth { max-width:100%; }
 
 
 /* -------------------------------------------------- 
@@ -592,7 +596,11 @@ footer {
         .corner { width:auto!important; } 
         
 }
+@media only screen and (max-width: 900px) { 
+        nav .large-4 { display:none; visibility:hidden; }
+}
 @media only screen and (max-width: 767px) { 
+        nav { display:none; visibility:hidden; }
         .philosophy-skills hr { margin:30px 0 60px 0; }
         .skills h3 { display:block; margin:auto; text-align:center; }
         .skills img { display:block; margin:0 auto 30px auto; }
