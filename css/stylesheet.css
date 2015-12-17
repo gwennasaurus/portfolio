@@ -55,7 +55,8 @@ a {
 	color:#248479; 
 	font-weight:bold; 
 	line-height:inherit; 
-	text-decoration:none; }
+	text-decoration:none;
+    transition: all 0.35s ease-in-out; }
 	
 a:hover { color:#30c2a5; }
 
@@ -177,7 +178,7 @@ caption, th, td { font-weight: normal; }
 body {
 	color:#0f1f30;
 	font-family: 'Raleway', sans-serif;
-	font-size:15px;
+	font-size:18px;
 	line-height:28px;
 	margin:0;
 	padding:0; }
@@ -187,20 +188,17 @@ body {
 	background:url(../images/bg-header.png) repeat #102433;
 	background-attachment: fixed;
 	height:100%;
-	min-height:800px;
+	min-height:100px;
 	position:relative;
 	width:100%;
 	/*z-index:-100;*/ }
 	
 	.logo {
-		animation:drop 0.5s;
-		-webkit-animation:drop 0.5s;
-		-moz-animation:drop 0.5s;
-		-ms-animation:drop 0.5s;
 		display:block;
-		margin:auto;
-		position:fixed;
-		top:350px; right:0; left:0; }
+        height:50px; 
+        position:fixed;
+        top:25px;
+    }
 	.logo-icon {
 		animation:drop 0.5s;
 		-webkit-animation:drop 0.5s;
@@ -209,7 +207,7 @@ body {
 		display:block;
 		margin:auto;
 		position:fixed;
-		top:150px; right:0; left:0;
+		top:10px; right:0; left:0;
 		z-index:100!important; }
 		@keyframes drop {
 			0% { opacity: 0; transform: scale(2); }
@@ -227,21 +225,6 @@ body {
 			0% { opacity: 0; -moz-transform: scale(2); }
 			100% { opacity: 1; -moz-transform: scale(1); }
 			} 
-			
-	.scroll-tab {
-		background:#30c2a5;
-		color:#fff;
-		display:inline-block;
-		font-size:18px;
-		font-weight:700;
-		margin:auto;
-		padding:10px 0 8px 0;
-		position:absolute;
-		bottom:0; right:0; left:0; 
-		/*position:fixed;
-		bottom:0; right:0; left:0;*/
-		text-align:center;
-		width:80px; }
 		
 .tagline { 
 	background:#fff;
@@ -258,17 +241,34 @@ body {
 		margin:30px 0 30px 0; }
 	
 	.intro-below {
-	height:120px;
+	height:80px;
 	position:relative;
 	z-index:0; }
 	
 	.intro-above { 
 		background:#fff;
-		padding:0 0 120px 0;
+		padding:40px 0 120px 0;
 		position:relative;
 		z-index:300!important; }
+    .intro-paragraph {
+        margin:20px auto 0 auto;
+        max-width:620px;
+        /*text-align:left;*/
+    }
+	nav {
+        color:#fff;
+        font-size:18px;
+        font-weight:bold;
+        position:fixed;
+        top:32px;
+        text-align:right;
+        text-transform:uppercase;
+        width:100%;
+    }
+    nav a {
+        color:#fff;
+    }
 
-	
 .icons-container { 
 	background:url(../images/bg-parallax.png) repeat #e8e7e7;
 	background-attachment:fixed; 
@@ -278,29 +278,10 @@ body {
 	position:relative;
 	z-index:100;
 	 }
-	.icons { 
-		height:300px; 
-		margin:auto; 
-		max-width:1000px;
-		position:relative;
-		}
-	#icon-jquery { position: absolute; top:130px; left:0; }
-	#icon-css3 { position: absolute; top:90px; left:155px; }
-	#icon-html5 { position: absolute; top:95px; left:290px; }
-	#icon-indesign { position: absolute; top:115px; left:480px; }
-	#icon-illustrator { position: absolute; top:55px; left:660px; }
-	#icon-photoshop { position: absolute; top:75px; left:860px; }
-	#icon-basecamp { position: absolute; top:150px; left:0; }
-	#icon-wordpress { position: absolute; top:40px; left:155px; }
-	#icon-mailchimp { position: absolute; top:120px; left:290px; }
-	#icon-hubspot { position: absolute; top:100px;right:265px; }
-	#icon-accrisoft { position: absolute; top:40px; right:160px; }
-	#icon-litmus { position: absolute; top:140px; right:0; }
-	.parallax-item{ position:absolute; z-index:5; }
-	
+
 #content1 {
 	background:#fff;
-	border-top: 5px solid #30c2a5;
+	border-top: 1px solid #d7d7d7;
 	padding:120px 0;
 	position:relative;
 	width:100%;
@@ -310,16 +291,18 @@ body {
 		background:url(../images/hr-triangle.png) no-repeat top center; 
 		border:0; 
 		height:4px; 
-		margin:90px 0 120px 0; }
+		margin:90px 0 100px 0; }
 
-	.philosophy, .skills, .experience { margin:60px 0 0 0; position:relative; width:100%; }
+	.philosophy, .process, .skills, .experience { margin:60px 0 0 0; position:relative; width:100%; }
 		.philosophy h3 { margin:30px 0; }		
-		.skills h3 { display:inline; }
-		
+		.process p { margin:0 0 15px 0; }
+        .process .define { margin-top:24px; }
+        .skills h3 { display:inline; }
+        
 
 #content2 {
 	background:#fff;
-	border-top: 5px solid #30c2a5;
+	border-top: 1px solid #d7d7d7;
 	padding:120px 0;
 	position:relative;
 	width:100%;
@@ -405,6 +388,7 @@ body {
 		vertical-align:middle; }
 
 #content3 {
+    border-top: 1px solid #d7d7d7;
 	font-size:18px;
 	line-height:36px;
 	padding:120px 0;
@@ -412,7 +396,7 @@ body {
 
 #content4 {
 	background:#fff;
-	border-top: 5px solid #30c2a5;
+	border-top: 1px solid #d7d7d7;
 	padding:120px 0;
 	position:relative;
 	width:100%;
@@ -545,9 +529,9 @@ footer {
 	margin:10px 0;
 	padding:25px 25px;
 	text-align:center;
-	transition: background-color 0.45s ease-in-out, border-color 0.45s ease-in-out; 
-	-webkit-transition: -webkit-background-color 0.45s ease-in-out, border-color 0.45s ease-in-out;
-	-moz-transition: -moz-background-color 0.45s ease-in-out, border-color 0.45s ease-in-out; }
+	transition: all 0.35s ease-in-out; 
+	-webkit-transition: -webkit-all 0.35s ease-in-out
+	-moz-transition: -moz-all 0.35s ease-in-out; }
 	.button1-solid {
 		background-color:#30c2a5;
 		color:#fff;
@@ -583,7 +567,10 @@ footer {
 .hide { display: none; }
 .hideclear { clear:both; height:0; overflow:hidden; visibility:hidden;}
 .last { margin-right:0; }
+.text-18 { font-size:20px; }
 .text-21 { font-size:28px; line-height:48px; }
+.pt-5 { padding:5px 0 0 0; }
+.fullwidth { max-width:100%; }
 
 
 /* -------------------------------------------------- 
@@ -609,7 +596,11 @@ footer {
         .corner { width:auto!important; } 
         
 }
+@media only screen and (max-width: 900px) { 
+        nav .large-4 { display:none; visibility:hidden; }
+}
 @media only screen and (max-width: 767px) { 
+        nav { display:none; visibility:hidden; }
         .philosophy-skills hr { margin:30px 0 60px 0; }
         .skills h3 { display:block; margin:auto; text-align:center; }
         .skills img { display:block; margin:0 auto 30px auto; }
